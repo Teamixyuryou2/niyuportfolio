@@ -26,36 +26,44 @@ export default function Home() {
 
       <div className="items-center justify-items-center h-full w-full font-[family-name:var(--font-geist-sans)] text-white">
 
-        <div className="sticky top-0 w-full h-[3em] text-sm">
+        <div className="sticky top-0 z-50 w-full h-[3em] text-sm">
             <Navbar/>
         </div>
 
-        <div className="flex h-screen max-h-[1080px] justify-center items-center text-[1rem]">
-          . . _ Explore Beyond _ . .
+        <div className="flex h-screen max-h-[1080px] justify-center items-center text-[1.2rem]">
+          . . _ To Explore Beyond _ . .
         </div>
 
-        <div className="grid grid-rows-[.4fr_.5fr_.2fr] h-full w-full items-center bg-stone-900">
+        <div className="grid grid-rows-[.3fr_.5fr_.4fr] h-full w-full items-center bg-stone-900">
 
 {/* Carasol */}
-          <div className="flex justify-center items-center h-full w-full by-2 bg-stone-900">
+          <div className="flex justify-center items-center h-full w-full by-2 bg-stone-900 overflow-x-hidden">
               <HorizontalDisplay/>
           </div>
 {/* Carasol */}
 
-          <div className="flex h-full w-full by-2 bg-green-300">
-            asdassad
+          <div className="flex flex-row h-full w-full justify-center items-center py-2 bg-stone-800">
+            <div>
+              a
+            </div>
+   
           </div>
-          <div className="flex h-full w-full by-2 bg-green-200">
+
+          <div className="flex h-full w-full by-2 bg-stone-900">
             asdasgg
           </div>
 
         </div>
 
-        <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
+        <footer className="flex flex-col p-5 gap-[24px] flex-wrap items-center justify-center">
           <div>
+            Twitter Pixiv 
+          </div>
+          <div className="flex flex-col p-5 gap-[24px] flex-wrap items-center justify-center text-xs">
             © 2025 N I Y U . All Rights Reserved.
           </div>
         </footer>
+
       </div>
 
       }
