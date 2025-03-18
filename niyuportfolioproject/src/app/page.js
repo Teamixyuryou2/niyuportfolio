@@ -24,7 +24,7 @@ export default function Home() {
     <div className="items-center justify-items-center h-screen w-full font-[family-name:var(--font-geist-sans)] text-white">
       {loading ? <LoadingScreen/> :
 
-      <div className="items-center justify-items-center h-full w-full font-[family-name:var(--font-geist-sans)] text-white">
+      <div className="items-center justify-items-center h-full w-full font-[family-name:var(--font-geist-sans)] text-white select-none">
 
         <div className="sticky top-0 z-50 w-full h-[3em] text-sm">
             <Navbar/>
@@ -34,22 +34,28 @@ export default function Home() {
           . . _ To Explore Beyond _ . .
         </div>
 
-        <div className="grid grid-rows-[.3fr_.5fr_.4fr] h-full w-full items-center bg-stone-900">
+        <div className="grid grid-rows-[.5fr_.5fr_.4fr] h-full w-full bg-stone-900">
 
 {/* Carasol */}
-          <div className="flex justify-center items-center h-full w-full by-2 bg-stone-900 overflow-x-hidden">
-              <HorizontalDisplay/>
+          <div className="flex flex-row justify-center items-center h-full justify-center items-center bg-stone-900 overflow-x-hidden bg-white">
+            <div className="flex flex-row h-[98%] xl:h-[200px] bg-stone-900 overflow-x-hidden bg-white">
+                <HorizontalDisplay/>
+            </div>
           </div>
 {/* Carasol */}
 
-          <div className="flex flex-row h-full w-full justify-center items-center py-2 bg-stone-800">
+          <div className="flex flex-col w-full items-center bg-stone-800 ">
+
+            <div className="text-[2rem]">
+              . Vita Mea .
+            </div>
             <div>
-              a
+              Illustrator / Storyborder / 3D Modeller
             </div>
    
           </div>
 
-          <div className="flex h-full w-full by-2 bg-stone-900">
+          <div className="flex h-full w-full by-2 bg-stone-900 items-center justify-center">
             asdasgg
           </div>
 
