@@ -19,7 +19,7 @@
   }
 }
 
-/* Define the infinite scroll animation */
+/* infinite scroll animation */
 @keyframes infinite-scroll {
   0% {
     transform: translateX(0);
@@ -29,9 +29,35 @@
   }
 }
 
-/* Apply the animation to the scroll class */
+/* apply to scroll*/
 .animate-scroll {
   animation: infinite-scroll 200s linear infinite;
+}
+
+/* For Webkit browsers (Chrome, Safari, Edge) */
+.scrollbar-custom::-webkit-scrollbar {
+  width: 12px; /* Set width of the scrollbar */
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Set the color of the track */
+  border-radius: 10px; /* Optional: rounded corners for the track */
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background: #888; /* Set the color of the thumb (scroll handle) */
+  border-radius: 10px; /* Optional: rounded corners for the thumb */
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Hover color for the thumb */
+}
+
+/* For Firefox */
+.scrollbar-custom {
+  scrollbar-width: thin; /* Thin scrollbar */
+  scrollbar-color: #000000 #b9b0b0; /* Thumb and track color */
+  scrollbar-arrow-color: #b9b0b0;
 }
 
 body {
