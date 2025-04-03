@@ -6,6 +6,7 @@ import { faTwitter, faPixiv } from "@fortawesome/free-brands-svg-icons";
 import Navbar from "./components/navbar";
 import LoadingScreen from "./components/loadingscreen";
 import HorizontalDisplay from "./components/horizontaldisplay";
+import Link from "next/link"
 
 export default function Home() {
   const [loading, setLoading] = useState(true)   //Loading Switch
@@ -54,7 +55,7 @@ export default function Home() {
 
         <div className="grid grid-rows-[.5fr_.5fr_.4fr] h-full w-full bg-stone-900">
           {/* Carousel */}
-          <div className="flex flex-row justify-center items-center h-full overflow-x-hidden bg-stone-800">
+          <div className="flex flex-row justify-center  h-full overflow-x-hidden bg-stone-800">
             <div className="flex flex-row h-[98%] xl:h-[200px] bg-stone-900 overflow-x-hidden">
               <HorizontalDisplay />
             </div>
@@ -75,10 +76,14 @@ export default function Home() {
         <footer className="flex flex-col p-5 gap-[24px] flex-wrap items-center justify-center">
           <div className="flex gap-4 ">
             <button className="w-[50px] h-[50px]">
-              <FontAwesomeIcon icon={faTwitter} size="2x" className=" hover:text-gray-500 transition-all ease-in-out duration-600" />
+              <Link href="https://x.com/LannFO">
+                <FontAwesomeIcon icon={faTwitter} size="2x" className=" hover:text-gray-500 transition-all ease-in-out duration-600" />
+              </Link>
             </button>
             <button className="w-[50px] h-[50px]">
-              <FontAwesomeIcon icon={faPixiv} size="2x" className=" hover:text-gray-500 transition-all ease-in-out duration-600" />
+              <Link href="https://www.pixiv.net/en/users/60824351">
+                <FontAwesomeIcon icon={faPixiv} size="2x" className=" hover:text-gray-500 transition-all ease-in-out duration-600" />
+              </Link>
             </button>
           </div>
 
